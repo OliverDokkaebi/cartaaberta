@@ -1,0 +1,46 @@
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#sim, #nao {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#sim:hover, #nao:hover {
+    background-color: #666;
+}
+
+#resposta {
+    display: none;
+    text-align: left;
+}
+
+#resposta img {
+    width: 100px;
+    margin-top: 20px;
+}
