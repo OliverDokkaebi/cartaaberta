@@ -1,21 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pergunta do Amor</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Carta para Débora Camila</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Olá, quer namorar comigo?</h1>
-        <div class="opcoes">
-            <button id="sim">Sim!</button>
-            <button id="nao">Não :(</button>
-        </div>
-        <div id="resposta">
-            </div>
+    <div id="texto">
+        <p id="parte1">Bem, você quer de fato saber a verdade?</p>
+        <p id="parte2" style="display:none;">Bem, então vamos lá.</p>
+        <p id="parte3" style="display:none;">Às vezes é difícil para meu ser se expressar, principalmente sobre quando é sobre sentimentos.</p>
+        <p id="parte4" style="display:none;">Eu odeio sentir as coisas, eu me sinto exposto, vulnerável.</p>
+        <p id="parte5" style="display:none;">Geralmente quando eu sinto um sentimento forte, eu sempre tento destruir.</p>
+        <p id="parte6" style="display:none;">Eu tentei mudar isso, desapegar das pessoas, ficar por ficar, beijar por beijar, eu sentia que estava conseguindo, finalmente me tornando alguém sem coração.</p>
+        <p id="parte7" style="display:none;">Porém, você apareceu.</p>
+        <p id="parte8" style="display:none;">Não sei ao certo em que ponto, mas de alguma maneira você me cativou.</p>
+        <p id="parte9" style="display:none;">Se a sua pergunta era só se eu gosto de ti, bem, aí está a resposta, sim, eu gosto de ti.</p>
+        <p id="parte10" style="display:none;">Tentei explicar um pouco mais sobre isso, mas sou péssimo com palavras.</p>
+        <p id="parte11" style="display:none;">É a desvantagem de ser alguém muito lógico, o mundo acaba se tornando mais rápido.</p>
+        <p id="parte12" style="display:none;">Eu gostaria de entender o porquê de ser você em específico, já pensei em vários fatores, várias possibilidade.</p>
+        <p id="parte13" style="display:none;">Mas no fim, nunca sinto um resultado lógico, por que será?</p>
+        <p id="parte14" style="display:none;">Bem, me prolonguei um pouco mais do que deveria, até porque eu estou fazendo esse site literalmente no meio da prova.</p>
+        <p id="parte15" style="display:none;">Mas é isso, Débora Camila, essa é a verdade que você tanto queria, por mais que já estivesse exposta a um tempo.</p>
+        <p id="parte16" style="display:none;">De Oliver.</p>
+        <p id="parte17" style="display:none;">Observação: O site tá feio porque eu tô sem notebook, tô fazendo pelo celular *_*.</p>
     </div>
-    <script src="script.js"></script>
+    <button onclick="mostrarProximaParte()">Continuar</button>
+
+    <script>
+        var indiceAtual = 1;
+        var totalPartes = 17; // Atualize este número para o total de partes do texto
+
+        function mostrarProximaParte() {
+            if (indiceAtual < totalPartes) {
+                document.getElementById('parte' + indiceAtual).style.display = 'none';
+                indiceAtual++;
+                document.getElementById('parte' + indiceAtual).style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
